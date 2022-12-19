@@ -20,6 +20,8 @@ SELF.include Docker
 SELF.include Config
 SELF.include Envs
 
+run 'bundle remove tzinfo-data'
+
 configure_gems
 spec_helper_configurations
 rails_helper_configurations
