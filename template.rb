@@ -20,18 +20,17 @@ SELF.include Docker
 SELF.include Config
 SELF.include Envs
 
-run 'bundle remove tzinfo-data'
+run 'bundle remove tzinfo-data sqlite3'
 
-configure_gems                                unless ARGV.include?('--skip-gems')
-spec_helper_configurations                    unless ARGV.include?('--skip-spec_helper_configurations')
-rails_helper_configurations                   unless ARGV.include?('--skip-rails_helper_configurations')
-base_configurations                           unless ARGV.include?('--skip-base_configurations')
-jsonapi_wrapper_for_factories_configurations  unless ARGV.include?('--skip-jsonapi_wrapper_for_factories_configurations')
-swagger_errors_configurations                 unless ARGV.include?('--skip-swagger_errors_configurations')
-docker_configurations                         unless ARGV.include?('--skip-docker_configurations')
-docker_compose_configurations                 unless ARGV.include?('--skip-docker_compose_configurations')
-database_configurations                       unless ARGV.include?('--skip-database_configurations')
-dot_env_configurations                        unless ARGV.include?('--skip-dot-env-configurations')
+configure_gems                                unless ARGV.include?('--skip-gemset')
+spec_helper_configurations                    unless ARGV.include?('--skip-rspec')
+rails_helper_configurations                   unless ARGV.include?('--skip-rspec')
+rspec_base_configurations                     unless ARGV.include?('--skip-rspec')
+jsonapi_wrapper_for_factories_configurations  unless ARGV.include?('--skip-jsonapi_wrapper_for_factories')
+swagger_errors_configurations                 unless ARGV.include?('--skip-swagger')
+docker_configurations                         unless ARGV.include?('--skip-docker')
+docker_compose_configurations                 unless ARGV.include?('--skip-docker_compose')
+database_configurations                       unless ARGV.include?('--skip-database')
+dot_env_configurations                        unless ARGV.include?('--skip-dotenv')
 
 rails_command('generate rspec:install')
-
