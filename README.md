@@ -1,8 +1,8 @@
-## DIT RUBY TEMPLATE
-This is a template for a Rails project.
+## DIT RAILS TEMPLATE
+This is a template for a Rails project with some default and predefined gems and configurations.
 
 ## Instructions
-1. create a new rails app with the template flag like below:
+* create a new rails app with the template flag like below:
 ```
 rails new --api your_app_name --template https://github.com/ditkrg/rails-template/blob/main/template.rb
 
