@@ -1,6 +1,6 @@
 module Rspec
   module Helpers
-    def base_configurations
+    def rspec_base_configurations
       file 'spec/helpers/base.rb', <<~CODE
         module Helpers
           def transform_to_translation_attributes(attributes)
