@@ -4,7 +4,7 @@ This is a template for a Rails project with some default and predefined gems and
 ## Instructions
 * Clone the repo:
 ```
-git@github.com:ditkrg/rails-template.git
+git clone git@github.com:ditkrg/rails-template.git
 ```
 ```
 cd rails-template
