@@ -32,15 +32,15 @@ module Config
 
       development:
         <<: *default
-        database: <%= ENV.fetch("DATABASE__NAME") { "beas_api_development" } %>
+        database: <%= ENV.fetch("DATABASE__NAME") { "YOUR_DATABASE_NAME_api_development" } %>
 
       test:
         <<: *default
-        database: beas_api_test
+        database: YOUR_DATABASE_NAME_api_test
 
       production:
         <<: *default
-        database: <%= ENV.fetch("DATABASE__NAME") { "beas_api_production" } %>
+        database: <%= ENV.fetch("DATABASE__NAME") { "YOUR_DATABASE_NAME_api_production" } %>
 
     CODE
   end
