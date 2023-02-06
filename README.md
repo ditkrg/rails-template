@@ -2,9 +2,17 @@
 This is a template for a Rails project with some default and predefined gems and configurations.
 
 ## Instructions
+* Clone the repo:
+```
+git@github.com:ditkrg/rails-template.git
+```
+```
+cd rails-template
+```
+
 * create a new rails app with the template flag like below:
 ```
-rails new --api your_app_name --template https://github.com/ditkrg/rails-template/blob/main/template.rb
+rails new --api your_app_name -m template.rb
 
 ```
 
