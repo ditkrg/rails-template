@@ -15,6 +15,8 @@ cd rails-template
 rails new --api your_app_name -m template.rb
 
 ```
+**NOTE**
+* add .env to .gitignore file
 
 ## Arguments
 This template by default will create a new rails app with the following:
