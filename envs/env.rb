@@ -4,7 +4,7 @@ module Envs
       DATABASE__HOST=localhost
       DATABASE__USERNAME=postgres
       DATABASE__PASSWORD=mysecretpassword
-      DATABASE__NAPME=beas_api_development
+      DATABASE__NAME=YOUR_DATABASE_NAME_api_development
       DATABASE__PORT=5432
     CODE
   end
