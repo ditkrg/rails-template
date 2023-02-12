@@ -1,6 +1,5 @@
 module Gems
   def configure_gems
-
     # gemfile instructions
     run 'bundle add pg'                         unless ARGV.include?('--skip-gem-pg')
     run 'bundle add tzinfo-data'                unless ARGV.include?('--skip-gem-tzinfo-data')
@@ -26,7 +25,6 @@ module Gems
     run 'bundle add dotenv-rails --group development,test'      unless ARGV.include?('--skip-gem-dotenv-rails')
 
     run 'bundle add factory_bot_rails --group development,test' unless ARGV.include?('--skip-gem-factory_bot_rails')
-    run 'dotenv-rails'                                          unless ARGV.include?('--skip-gem-dotenv-rails')
     run 'bundle add faker --group development,test'             unless ARGV.include?('--skip-gem-faker')
 
     run 'bundle add rspec-rails --group development,test'       unless ARGV.include?('--skip-gem-rspec-rails')
